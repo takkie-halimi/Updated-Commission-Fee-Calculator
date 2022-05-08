@@ -1,15 +1,3 @@
-# Commission Fee Calculator
-
-An experimental Dev-Task that parses operations from a csv file and calculates commission fees.
-
-## Installation
-
-Clone repository and install dependencies via composer.
-
-     composer install --no-dev  
-## Usage
-
-```php  
 <?php
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -55,14 +43,3 @@ try {
     }
 } catch (InvalidCurrencyException|InvalidOperationTypeException|InvalidUserTypeException $e) {
 }
-```
-## Demo
-
-     php main.php input.csv
-
-## Tests
-
-Install dev dependencies via composer and run tests.
-
-     composer install --dev
-     ./vendor/bin/phpunit tests
